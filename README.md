@@ -51,6 +51,13 @@ The following Python packages are required to run the application:
    - Choose a save folder.
    - View detailed game statistics.
 
+## images
+<div align="center">
+ <img src="https://i.imgur.com/nM0ETK1.png" alt="Account Selection" width="700">
+ <img src="https://i.imgur.com/MEiC16F.png" alt="Save Selection" width="700">
+ <img src="https://i.imgur.com/X3xdF2j.png" alt="Display Data" width="700">
+</div>
+
 ## Compiling
 
 For detailed compiling instructions, visit the [Wiki](https://github.com/SquashyHydra/Schedule-I-Stats/wiki/Compiling-to-windows-executable).
