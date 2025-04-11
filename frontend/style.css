@@ -1,0 +1,283 @@
+body {
+    font-family: 'Courier New', Courier, monospace; /* Use a typewriter-style font for a mysterious vibe */
+    margin: 0; /* Remove default margin */
+    padding: 10px; /* Add consistent padding for spacing */
+    background-color: #0d1117; /* Dark background for an immersive feel */
+    color: #3cb371; /* Updated to a green color for text */
+}
+
+h1 {
+    color: #3cb371; /* Updated to match the green theme */
+    text-align: center;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 5px #000; /* Add a subtle glow effect */
+}
+
+.account {
+    background-color: #161b22; /* Slightly lighter than the body background */
+    border: 1px solid #3cb371; /* Updated border to match the green theme */
+    border-radius: 8px;
+    padding: 15px;
+    width: 180px; /* Slightly wider for better content fit */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+    transition: transform 0.2s, box-shadow 0.2s; /* Smooth hover effect */
+}
+
+.account:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+.account.selected {
+    border-color: #2ea043; /* Highlight the selected profile with a brighter green */
+    box-shadow: 0 0 10px #2ea043; /* Add a glowing effect */
+    transform: scale(1.1); /* Slightly enlarge the selected profile */
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; /* Circular avatars for a modern look */
+    margin-bottom: 10px;
+    border: 2px solid #3cb371; /* Updated border to match the green theme */
+}
+
+button {
+    background-color: #3cb371; /* Updated to match the green theme */
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+    transition: background-color 0.2s, box-shadow 0.2s; /* Smooth hover effect */
+}
+
+button:hover {
+    background-color: #2e8b57; /* Slightly darker green on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+#accounts {
+    max-width: 1000px; /* Increase max width for more content */
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap; /* Allow accounts to wrap to the next row */
+    gap: 20px; /* Add spacing between accounts */
+    justify-content: center; /* Center the accounts */
+}
+
+.loading {
+    text-align: center;
+    font-size: 20px;
+    color: #3cb371; /* Updated to match the green theme */
+    margin: 20px 0;
+    display: none; /* Hidden by default */
+    font-style: italic; /* Add a unique style to the loading text */
+}
+
+#back-button {
+    position: absolute;
+    top: 10px; /* Align with the padding of the body */
+    left: 10px; /* Align with the padding of the body */
+    background-color: #3cb371; /* Match the green theme */
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 0 0 5px 0; /* Rounded bottom-right corner */
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+    transition: background-color 0.2s, box-shadow 0.2s; /* Smooth hover effect */
+}
+
+#back-button:hover {
+    background-color: #2e8b57; /* Slightly darker green on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+#stats {
+    max-width: 1000px; /* Set a maximum width for the stats section */
+    margin: 20px auto; /* Center the stats section horizontally and add spacing from the heading */
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow folders to wrap to the next row */
+    justify-content: center; /* Center the folders horizontally */
+    gap: 20px; /* Add spacing between folders */
+    text-align: center; /* Center the content inside the stats section */
+    margin-top: 20px; /* Add spacing between the title and the folders */
+}
+
+#heading {
+    text-align: center;
+    font-size: 2rem; /* Adjusted font size for better visibility */
+    margin-bottom: 20px; /* Add spacing below the heading */
+    text-shadow: 2px 2px 5px #000; /* Add a subtle glow effect */
+}
+
+.folder {
+    background-color: #161b22; /* Slightly lighter than the body background */
+    border: 1px solid #3cb371; /* Match the green theme */
+    border-radius: 8px;
+    padding: 15px;
+    width: 180px; /* Match the width of profiles */
+    text-align: center; /* Center the content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+    transition: transform 0.2s, box-shadow 0.2s; /* Smooth hover effect */
+    margin: 10px; /* Add spacing between folders */
+    display: flex; /* Use flexbox for folder content */
+    flex-direction: column; /* Stack the icon and text vertically */
+    align-items: center; /* Center the content inside the folder */
+}
+
+.folder:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+.folder-icon {
+    width: 120px;
+    height: 120px;
+    border-radius: 8px; /* Square with slightly rounded corners */
+    margin-bottom: 10px;
+    background-color: #3cb371; /* Match the green theme */
+    display: inline-block;
+}
+
+.folder p {
+    margin: 0; /* Remove default margin */
+    font-size: 16px; /* Adjust font size */
+    color: #3cb371; /* Match the green theme for better visibility */
+    text-align: center; /* Center the title */
+    font-weight: bold; /* Make the text bold for emphasis */
+}
+
+#game-data {
+    max-width: 800px;
+    margin: 20px auto; /* Center the content */
+    padding: 20px;
+    background-color: #0d1117; /* Match the theme */
+    border-radius: 8px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */ /* Add a shadow for depth */
+    color: #ffffff; /* Ensure text is readable */
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Add spacing between grid items */
+}
+
+#game-data h2 {
+    grid-column: span 2; /* Make subheadings span across the grid */
+    text-align: center; /* Center the subheadings */
+    align-self: center;
+    color: #3cb371; /* Match the green theme */
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 3px #000; /* Add a subtle glow effect */
+}
+
+#game-data p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0px 0px;
+    padding: 10px;
+}
+
+.data-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns per row */
+    gap: 20px; /* Add spacing between blocks */
+    margin: 20px auto;
+    max-width: 1000px; /* Center the grid and limit its width */
+}
+
+.data-block {
+    background-color: #161b22; /* Match the theme */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: flex-start;
+}
+
+.data-block h2 {
+    text-align: center; /* Center the heading */
+    color: #3cb371; /* Match the green theme */
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 3px #000; /* Add a subtle glow effect */
+}
+
+.data-block h2:hover {
+    filter: none; /* Remove blur on hover */
+}
+
+.data-content {
+    width: 100%; /* Ensure content spans the block width */
+    display: flex;
+    flex-direction: column;
+    /* gap: 10px; */ /* Add spacing between items */
+}
+
+.data-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0; /* Remove padding */
+    background-color: transparent; /* Remove background */
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background-color: #161b22;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    color: #3cb371;
+    width: 300px;
+    margin: 0 auto; /* Center the popup content horizontally */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center elements horizontally */
+}
+
+.popup-content input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #3cb371;
+    border-radius: 5px;
+    background-color: #0d1117;
+    color: #ffffff;
+}
+
+#api-key-input:focus {
+    outline: none; /* Remove default outline */
+    border: 2px solid #3cb371; /* Add green border */
+    box-shadow: 0 0 10px #3cb371; /* Add green glow */
+    background-color: #0d1117; /* Match the theme */
+    color: #ffffff; /* Ensure text is readable */
+}
+
+.popup-content button {
+    background-color: #3cb371;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steam Account Info</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./scripts.js"></script>
+</head>
+<body>
+    <h1>Steam Account</h1>
+    <div id="loading" class="loading">Loading...</div>
+    <div id="accounts"></div>
+
+    <!-- Popup for entering Steam API key -->
+    <div id="api-key-popup" class="popup" style="display: none;">
+        <div class="popup-content">
+            <h2>Enter Steam API Key</h2>
+            <p>You can get your Steam API key <a href="https://steamcommunity.com/dev/apikey" target="_blank">here</a>.</p>
+            <input type="password" id="api-key-input" placeholder="Enter your Steam API key" onpaste="return true;">
+            <button id="save-api-key-button">Save</button>
+        </div>
+    </div>
+</body>
+</html>

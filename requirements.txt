@@ -1,0 +1,7 @@
+requests
+pywebview
+QtPy
+cefpython3
+nuitka
+wheel
+setuptools
