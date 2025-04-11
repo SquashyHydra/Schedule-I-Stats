@@ -12,6 +12,7 @@ Schedule I Stats Display is a Python-based application that displays save game s
 ## Requirements
  - [.NET Framework 4.7.2>](https://dotnet.microsoft.com/en-us/download/dotnet-framework)
  - [WebView2](developer.microsoft.com/en-us/microsoft-edge/webview2#download)
+
 The following Python packages are required to run the application:
 - `requests`
 - `pywebview`
