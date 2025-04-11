@@ -108,7 +108,7 @@ class save_data():
         game_data['Networth'] = round(float(Networth_balance), 2)
         game_data['LifetimeEarnings'] = round(float(lifetime_earnings), 2)
         game_data['Rank'] = rank_conversion[int(Rank)]
-        game_data['Tier'] = tier_conversion[int(Tier)]
+        game_data['Tier'] = tier_conversion[int(Tier) - 1]
         game_data['XP'] = tier_xp
         game_data['TotalXP'] = total_xp
         game_data['TimePlayed'] = round((int(time_played_seconds)) / 3600)
