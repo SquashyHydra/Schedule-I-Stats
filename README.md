@@ -49,6 +49,14 @@ The following Python packages are required to run the application:
    - Choose a save folder.
    - View detailed game statistics.
 
+## Compilation
+
+For detailed compiling instructions, visit the [Wiki](https://github.com/SquashyHydra/Schedule-I-Stats/wiki/Compiling-to-windows-executable).
+
+## Setting Up a Python Environment
+
+For detailed enviroment setup instructions, visit the [Wiki](https://github.com/SquashyHydra/Schedule-I-Stats/wiki/Setting-Up-a-Python-Environment).
+
 ## Development
 
 ### File Structure
