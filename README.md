@@ -1,5 +1,6 @@
-# Schedule I Stats Display
-
+<div align="center">
+ <h1>Schedule I Stats Display</h1>
+</div>
 Schedule I Stats Display is a Python-based application that displays save game statistics for the game "Schedule I". It uses PyWebView for the GUI and integrates with the Steam API to fetch account and game-related data.
 
 ## Features
